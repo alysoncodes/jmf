@@ -48,6 +48,38 @@ src: url('') format(woff);
  *   GLOBAL STYLES
  *------------------------------------*/
 
+//removing overflow
+section[data-section-id="659f01ef468e9c4ff8ac3544"], section[data-section-id="659f020431c609169cde0ae5"], section[data-section-id="659e2becbfff722aa18f3f02"], section[data-section-id="659f01a76aaf303002d989e3"], section[data-section-id="659ed112fb3bf56441f30a82"],section[data-section-id="659f055af7d1b32c66d96220"],section[data-section-id="659f0562a3d0ca72f7375bbd"],section[data-section-id="659f0581f15a3955902b1d97"],section[data-section-id="659f061310a81d0e7b8fb5aa"],section[data-section-id="659f061d5842e811c931b4a1"],section[data-section-id="659f0725a135e807ef53bd19"], section[data-section-id="659f07b93d7aab76d5aebfe4"], section[data-section-id="659223d47730840d407ca669"],section[data-section-id="659c3ad226e62054cc5c5ed2"], section[data-section-id="659c3aaa2110202567ccd1a8"], section[data-section-id="659c406ec2f583350a65708a"], section[data-section-id="659ecdac2d12f340f3edcd24"]{
+    overflow: hidden !important;
+  }
+
+.markdown-block p {
+animation:fadeEnter 2s forwards;
+}
+
+@keyframes fadeEnter {
+0% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+//summary pagers on mobile
+
+@media @mobile{
+  span.summary-carousel-pager-next.next{
+    scale: 3 !important;
+    color: black !important;
+  }
+  span.summary-carousel-pager-prev.previous{
+    scale: 3 !important;
+    color: black !important;
+  }
+  
+}
+
+
 //rotate text
 
 .rotateText{
@@ -305,6 +337,11 @@ h4 {
   text-transform: uppercase;
 }
 
+@media @mobile{
+  h4{
+    line-height: 1.9rem;
+  }
+}
 
 .header-nav-list a{
   font-family: 'presicav'!important;
